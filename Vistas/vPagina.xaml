@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="semana3GPaucar.Vistas.vPagina"
+             BackgroundColor="White">
+    <VerticalStackLayout
+        Padding="5" 
+        Spacing="1"
+        Margin="0">
+        <StackLayout BackgroundColor="LightBlue" Padding="20">        
+              <Image Source="https://www.uisrael.edu.ec/wp-content/uploads/2023/01/logo-uisrael@2x-e1674848533171.png"
+                 HeightRequest="22"/>
+            <Label 
+             Text="Sistema de notas Ver. 2.2"
+               TextColor="Blue"
+              FontSize="Micro"
+              VerticalOptions="Center" 
+              HorizontalOptions="Center"
+                />
+        </StackLayout>     
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Label x:Name="lblUsuario"
+                TextColor="Blue"
+                FontSize="13"
+                HorizontalTextAlignment="Start"
+                Grid.Row="0"
+                Grid.Column="2"/>
+            <Image Source="conectado.png"
+              HeightRequest="18"
+              />
+        </Grid>
+
+        <BoxView Color="Gray" HeightRequest="1" HorizontalOptions="FillAndExpand" Margin="0,10,0,10" />
+
+        <Picker x:Name="pkseleccion" Title="Seleccione Estudiante:" TitleColor="Blue" TextColor="Black" BackgroundColor="WhiteSmoke">
+            <Picker.Items>
+                <x:String>Antonio Paucar</x:String>
+                <x:String>Karla Rosero</x:String>
+                <x:String>Juan Lopez</x:String>
+                <x:String>Fracisco Campos</x:String>
+                <x:String>Kelly Diaz</x:String>
+            </Picker.Items>
+        </Picker>
+
+        
+            <BoxView Color="Gray" HeightRequest="1" HorizontalOptions="FillAndExpand" Margin="0,10,0,10" />
+
+      
+
+        <Label 
+         Text="Calificaciones Seguimiento 1:"            
+         HorizontalTextAlignment="Center"
+         FontSize="Micro"
+         TextColor="Blue"
+         Margin="0,0,0,10" 
+         />
+
+        <Label 
+            Text="Seguimiento:       Parcial:"
+            HorizontalTextAlignment="Start"
+            FontSize="15"
+            TextColor="Blue"
+            Margin="0,0,0,10" 
+          />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+           
+
+            <Entry x:Name="txtSeguimiento1" 
+               Placeholder="00,00"
+               BackgroundColor="WhiteSmoke"
+                   TextColor="Black"
+               Keyboard="Numeric"            
+               Grid.Row="0"
+               Grid.Column="0"
+            />
+        
+        <Entry x:Name="txtExamen1" 
+            BackgroundColor="WhiteSmoke"
+            Placeholder="00,00"
+               TextColor="Black"
+           Keyboard="Numeric"        
+           Grid.Row="0"
+           Grid.Column="4"
+               />
+        </Grid>
+ 
+        <Label x:Name="lblPromedio1" Text="Promedio Parcial 1:" TextColor="Blue" />
+
+        <Button 
+             x:Name="btnSeguimiento1"
+            Text="Calcular"
+            TextColor="Blue"
+            BackgroundColor="LightGray"
+            Clicked="btnInicio_Clicked"
+            WidthRequest="100"          
+         />
+
+        <BoxView Color="Gray" HeightRequest="1" HorizontalOptions="FillAndExpand" Margin="0,10,0,10" />
+
+        <Label 
+            Text="Calificaciones Seguimiento 2"
+            HorizontalTextAlignment="Center"
+            FontSize="Micro"
+           TextColor="Blue"
+            
+            Margin="0,0,0,10" 
+            />
+
+        <Label 
+      Text="Seguimiento:       Parcial:"
+      HorizontalTextAlignment="Start"
+      FontSize="15"
+      TextColor="Blue"
+      Margin="0,0,0,10" 
+    />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <Entry x:Name="txtSeguimiento2" 
+         Placeholder="00,00"
+         BackgroundColor="WhiteSmoke"
+                   TextColor="Black"
+         Keyboard="Numeric"            
+         Grid.Row="0"
+         Grid.Column="0"
+      />
+
+            <Entry x:Name="txtExamen2" 
+      BackgroundColor="WhiteSmoke"
+      Placeholder="00,00"
+                   TextColor="Black"
+     Keyboard="Numeric"        
+     Grid.Row="0"
+     Grid.Column="4"
+         />
+        </Grid>
+
+        
+        <Label x:Name="lblPromedio2" Text="Promedio Parcial 2:"  TextColor="Blue"/>
+
+
+        <Button 
+            x:Name="btnSeguimiento2"
+             Text="Calcular"
+             Clicked="btnInicio2_Clicked"
+             TextColor="Blue"
+             BackgroundColor="LightGray"
+             WidthRequest="100"          
+          />
+        <BoxView Color="Gray" HeightRequest="1" HorizontalOptions="FillAndExpand" Margin="0,10,0,10" />
+
+     <Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="50"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+
+    <Label x:Name="lblPromedioSemestre" Text="Promedio Semestre :" TextColor="Blue" Grid.Row="0" Grid.Column="0" />
+
+    <Label x:Name="lblEstadoSemestre" Text="Estado Semestre:" TextColor="Blue" Grid.Row="0" Grid.Column="2"/>
+</Grid>
+
+
+
+        <DatePicker  x:Name="datePicker" HorizontalOptions="Center" TextColor="Blue" BackgroundColor="WhiteSmoke"/>
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">   
+            
+           </StackLayout>
+        <StackLayout BackgroundColor="LightBlue" Padding="23">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>                    
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="btnInforme"
+                Text="Informe"
+                Clicked="btnInforme_Clicked"
+                TextColor="Blue"
+                BackgroundColor="DeepSkyBlue"
+                Margin="0,0,10,0" 
+                Grid.Row="0" 
+                Grid.Column="0"
+                HorizontalOptions="FillAndExpand"/>
+
+                <Button x:Name="btnNuevo"
+                Text="Nuevo"
+                Clicked="btnNuevo_Clicked"
+                TextColor="Blue"
+                BackgroundColor="DeepSkyBlue"
+                Margin="10,0,0,0"
+                Grid.Row="0" 
+                Grid.Column="2"
+                HorizontalOptions="FillAndExpand"/>
+            </Grid>
+        </StackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>
