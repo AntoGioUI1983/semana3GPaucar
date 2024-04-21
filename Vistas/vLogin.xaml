@@ -25,7 +25,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="50"/>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
@@ -35,35 +35,35 @@
                    FontSize="Micro"
                    HorizontalOptions="Center"
                    VerticalOptions="CenterAndExpand"
-                   TextColor="Blue" 
+                   TextColor="Black" 
                      Grid.Row="0"
-                Grid.Column="0"/>
+                Grid.Column="1"/>
 
 
             <Entry x:Name="txtUsuario" 
                Placeholder="Digite Usuario"
                MaxLength="10"
-               TextColor="Blue"
+               TextColor="Black"
                Grid.Row="0"
-               Grid.Column="1"/>
+               Grid.Column="2"/>
 
 
             <Label Text="Contraseña :"
                     FontSize="Micro"
                     VerticalOptions="Center"
                    HorizontalOptions="Center"
-                    TextColor="Blue" 
+                    TextColor="Black" 
                     Grid.Row="1"
-                   Grid.Column="0"/>
+                   Grid.Column="1"/>
 
 
             <Entry x:Name="txtContrasena" 
                      Placeholder="Digite Contraseña"
                      IsPassword="True"
-                     TextColor="Blue"
+                     TextColor="Black"
                      MaxLength="10"
                      Grid.Row="1"
-                     Grid.Column="1"/>
+                     Grid.Column="2"/>
 
            
         </Grid>
@@ -73,7 +73,7 @@
              x:Name="btnInicio"
               Text="Iniciar Sesión"
               Clicked="btnInicio_Clicked"
-              TextColor="Blue"
+              TextColor="Black"
               BackgroundColor="White" 
                    WidthRequest="150"   
               />
